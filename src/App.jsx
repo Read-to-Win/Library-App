@@ -13,7 +13,7 @@ function App() {
       element: <Books/>
      },
      {
-      path: "/forms",
+      path: "/form",
       element: <BookForm/>
      }
     ]);

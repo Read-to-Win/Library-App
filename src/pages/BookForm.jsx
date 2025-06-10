@@ -1,9 +1,11 @@
-import React from 'react'
+import Form from "../components/Form";
 
 const BookForm = () => {
   return (
-    <div>BookForm</div>
-  )
-}
+    <div>
+      <Form />
+    </div>
+  );
+};
 
-export default BookForm
+export default BookForm;

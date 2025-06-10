@@ -1,9 +1,11 @@
-
-
 const Footer = () => {
   return (
-    <div>Footer goes here</div>
-  )
-}
+    <footer className="">
+      <div>
+        <h2>Contact Us</h2>
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
