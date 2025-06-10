@@ -1,13 +1,23 @@
+import { createBrowserRouter, RouterProvider } from "react-router";
 import "./App.css";
-import NavBar from "./components/NavBar";
-import ProductCard from "./components/ProductCard";
+import Home from "./pages/Home";
+import Books from "./pages/Books";
+import BookForm from "./pages/BookForm";
 
 function App() {
-  return <div>
-     <NavBar/>
-    <ProductCard/>
-   
-  </div>;
+  const router = createBrowserRouter([{
+     path: "/", element: <Home />
+     },
+     {
+      path: "/books",
+      element: <Books/>
+     },
+     {
+      path: "/form",
+      element: <BookForm/>
+     }
+    ]);
+  return <RouterProvider router={router} />;
 }
 
 export default App;
