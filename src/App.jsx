@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Books from "./pages/Books";
 import BookForm from "./pages/BookForm";
+import BookDetails from "./pages/BookDetails";
 
 function App() {
   const router = createBrowserRouter([{
@@ -15,6 +16,10 @@ function App() {
      {
       path: "/form",
       element: <BookForm/>
+     },
+     {
+      path:"/bookdetail",
+      element: <BookDetails/>
      }
     ]);
   return <RouterProvider router={router} />;
