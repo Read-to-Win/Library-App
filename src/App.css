@@ -1,5 +1,40 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+span h2{
+  color: #014d31;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: cursive;
+}
+nav {
+  background-color: #ccfcc171;
+}
+nav li:hover {
+color: #014d31;
+  background-color: #2e8d6a21;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: box-shadow 0.5s ease;
+  padding: 1px;
+
+}
+
+body {
+  border: rgb(253, 222, 184);
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+button:hover{
+  color: white;
+  background-color: #2e8d6a;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: box-shadow 0.5s ease;
+}
 #hero {
-  background-image: url("./assets/heroImage.jpg");
+  background-image: url("./assets/angel.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,18 +43,201 @@
 }
 
 .overlay {
-    background-color: rgba(0, 0, 0, 0.6);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    padding: 0 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0 20px;
 }
 
-.overlay p{
-    font-size: 40px;
-    text-decoration: underline;
-    padding: 10px;
+.overlay button {
+  font-size: 20px;
+  /* text-decoration: underline; */
+  padding: 5px 10px;
+  color: white;
+  background-color: #014d31;
+  border-radius: 20px;
+  margin-top: 100px;
 }
+
+.overlay h1 {
+  font-size: 50px;
+}
+
+#featured-books h1 {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.features {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+  border-radius: 8px;
+  background-color: #ccfcc171;
+  padding: 16px;
+  margin: 8px;
+  transition: box-shadow 0.3s ease;
+}
+.features img {
+  height: 70%;
+}
+.features:hover {
+  box-shadow: 0 0 0 1px rgba(7, 56, 1, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#feat {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.features h2 {
+  font-weight: bold;
+  text-align: start;
+  margin-top: 10px;
+  padding: 3px;
+}
+
+.features p {
+  color: #4b4b4b98;
+}
+
+.features p1 {
+  color: #014d31;
+  font-weight: bolder;
+}
+#about {
+  margin-top: 100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+    
+
+}
+
+#about h1 {
+  font-weight: bolder;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #014d31;
+}
+
+#about p {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* #footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 150px;
+  background-color: #014d31;
+  color: white;
+}
+ */
+.footer {
+  background-color: #014d31;
+  color: white;
+  padding: 50px;
+  margin: 40px;
+  margin-top: 100px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px rgba(7, 56, 1, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.footer h2{
+  font-style: italic;
+  font-size: 30px;
+  color: goldenrod;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 30px;
+}
+
+.footer-left h4 {
+  margin: 0;
+}
+
+.footer-left p {
+  margin: 5px 0;
+}
+
+.footer-links,
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links a,
+.footer-social a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: white;
+  background-color:rgba(255, 255, 255, 0.171);
+  font-style: italic;
+}
+
+.footer-social i {
+  margin-right: 8px;
+}
+
+.footer-newsletter {
+  max-width: 250px;
+}
+
+.footer-newsletter p {
+  margin: 0 0 8px 0;
+
+}
+
+.newsletter-input {
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.newsletter-button {
+  padding: 5px;
+  font-size: 15px;
+  margin-top: 20px;
+  background-color: goldenrod;
+  color: #014d31;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.newsletter-button:hover {
+  background-color: white;
+  color: #014d31;
+}
+
