@@ -6,9 +6,9 @@ import { useState } from "react";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState();
   return (
-    <nav className="flex flex-row justify-between items-center rounded-[20px] border-black p-4 boreder-none">
+    <nav className="flex flex-wrap justify-between items-center rounded-[20px] border-black p-4 boreder-none">
       <span>LOGO</span>
-      <ul className="flex flex-row gap-x-[40px]">
+      <ul className="flex md:flex-row gap-y-4 md:gap-x-[40px] md:items-center">
         <li>
           <Link to="/">Home</Link>
         </li>
