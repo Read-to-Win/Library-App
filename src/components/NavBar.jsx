@@ -6,7 +6,7 @@ import { useState } from "react";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState();
   return (
-    <nav className="flex flex-row justify-between items-center rounded-[20px] border-black p-4 boreder-none ">
+    <nav className="flex flex-row justify-between items-center rounded-[20px] border-black p-4 boreder-none">
       <span>LOGO</span>
       <ul className="flex flex-row gap-x-[40px]">
         <li>
@@ -26,7 +26,7 @@ const NavBar = () => {
       <button
         type="button"
         onClick={() => setIsOpen(true)}
-        className="bg-amber-950 rounded-[10px] cursor-pointer pt-[10px] pb-[10px] px-[20px] pl-[20px] text-white"
+        className="bg-[#4DA79E] rounded-[10px] cursor-pointer pt-[10px] pb-[10px] px-[20px] pl-[20px] text-white"
       >
         {/* <Link to="/form"> Add Book</Link> */}
         Add Book
