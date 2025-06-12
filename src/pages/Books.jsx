@@ -1,11 +1,38 @@
+import axios from "axios";
 import NavBar from "../components/NavBar";
 import ProductCard from "../components/ProductCard";
+import { useEffect, useState } from "react";
 
 const Books = () => {
+  const [loading, setLoading] = useState(false);
+
+  // fetch API from Get
+  const fetchBooks = async () => {
+    setLoading(true);
+    try {
+      const res = await axios.get(
+        "https://library-api-k879.onrender.com/books"
+      );
+      const data = await res.json();
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchBooks();
+  }, []);
+
   return (
     <div>
-        <NavBar/>
+      <NavBar />
       <ProductCard />
+
+      {/* Tenary operator-conditional rendering */}
+      {loading ? <p>Loading...</p> : <h2>Data is ready</h2>}
     </div>
   );
 };
