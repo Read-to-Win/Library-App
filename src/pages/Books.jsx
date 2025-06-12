@@ -65,7 +65,7 @@ const Books = () => {
                 <img
                   src={book.image}
                   alt={book.title}
-                  className="w-full h-auto rounded-lg mb-2"
+                  className="w-full h-96 rounded-lg mb-2"
                 />
                 <h3 className="text-lg font-semibold">{book.title}</h3>
                 <p className="text-sm text-gray-600">{book.author}</p>
