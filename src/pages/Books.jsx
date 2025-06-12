@@ -65,7 +65,7 @@ const Books = () => {
                 <img
                   src={book.image}
                   alt={book.title}
-                  className="w-full h-auto rounded-lg mb-2"
+                  className="w-full h-96 rounded-lg mb-2"
                 />
                 <h3 className="text-lg font-semibold">{book.title}</h3>
                 <p className="text-sm text-gray-600">{book.author}</p>
@@ -84,10 +84,7 @@ const Books = () => {
 
                   {/* Edit Icon with Tooltip */}
                   <div className="relative group">
-                    <FaEdit
-                      className="cursor-pointer text-3xl hover:text-green-500 hover:scale-125 transition-transform duration-200"
-                      //   onClick={() => handleEdit(book.id)}
-                    />
+                    <FaEdit className="cursor-pointer text-3xl hover:text-green-500 hover:scale-125 transition-transform duration-200" />
                     <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 px-2 py-1 text-xs text-white bg-gray-800 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-10">
                       Edit
                     </span>
