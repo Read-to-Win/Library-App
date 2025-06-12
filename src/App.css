@@ -8,10 +8,10 @@ span h2{
   text-transform: capitalize;
   font-family: cursive;
 }
-nav {
+/* nav {
   background-color: #ccfcc171;
 
-}
+} */
 nav li:hover {
 color: #014d31;
   background-color: #2e8d6a21;
@@ -19,6 +19,7 @@ color: #014d31;
   border-radius: 8px;
   transition: box-shadow 0.5s ease;
   padding: 1px;
+  cursor: pointer;
 
 }
 
@@ -59,9 +60,16 @@ button:hover{
   /* text-decoration: underline; */
   padding: 5px 10px;
   color: white;
-  background-color: #014d31;
+  background-color: #012c1c;
   border-radius: 20px;
   margin-top: 100px;
+}
+.overlay button:hover{
+  color: white;
+  background-color: #2e8d6a;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: box-shadow 0.5s ease;
 }
 
 .overlay h1 {
@@ -78,7 +86,7 @@ button:hover{
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
   text-align: justify;
   border-radius: 8px;
-  background-color: #ccfcc171;
+  /* background-color: #ccfcc171; */
   padding: 16px;
   margin: 8px;
   transition: box-shadow 0.3s ease;
@@ -111,7 +119,7 @@ button:hover{
 }
 
 .features p1 {
-  color: #014d31;
+  /* color: #014d31; */
   font-weight: bolder;
 }
 #about {
@@ -131,7 +139,7 @@ button:hover{
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-align: center;
   margin-bottom: 50px;
-  color: #014d31;
+  color: #012e1d;
 }
 
 #about p {
@@ -149,7 +157,7 @@ button:hover{
 }
  */
 .footer {
-  background-color: #014d31;
+  /* background-color: #014d31; */
   color: white;
   padding: 50px;
   margin: 40px;
