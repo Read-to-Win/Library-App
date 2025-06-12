@@ -6,6 +6,7 @@ import BookForm from "./pages/BookForm";
 import BookDetails from "./pages/BookDetails";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import Edit from "./components/Edit";
 
 function App() {
   const router = createBrowserRouter([{
@@ -30,6 +31,11 @@ function App() {
      {
       path:"/contact",
       element:<Footer/>
+     },
+
+     {
+      path:"/edit/:id",
+      element:<Edit/>
      }
 
 
