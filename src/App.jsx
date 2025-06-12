@@ -18,7 +18,7 @@ function App() {
       element: <BookForm/>
      },
      {
-      path:"/bookdetail",
+      path:"/bookdetail/:id",
       element: <BookDetails/>
      }
     ]);
