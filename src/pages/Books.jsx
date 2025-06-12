@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 const Books = () => {
   const [loading, setLoading] = useState(false);
+const [books, setBooks]= useState([])
 
   // fetch API from Get
   const fetchBooks = async () => {
@@ -13,8 +14,8 @@ const Books = () => {
       const res = await axios.get(
         "https://library-api-k879.onrender.com/books"
       );
-      const data = await res.json();
-      console.log(data);
+      console.log(res.data.data);
+      setBooks(res.data.data)
     } catch (error) {
       console.log(error);
     } finally {
@@ -32,7 +33,7 @@ const Books = () => {
       <ProductCard />
 
       {/* Tenary operator-conditional rendering */}
-      {loading ? <p>Loading...</p> : <h2>Data is ready</h2>}
+      {/* {loading ? <p>Loading...</p> : <h2>Data is ready</h2>} */}
     </div>
   );
 };

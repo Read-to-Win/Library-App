@@ -10,14 +10,14 @@ import { FaRegStarHalfStroke } from "react-icons/fa6";
 const Featured = () => {
   return (
     <section id="featured-books">
-      <h1 className="text-emerald-900 text-2xl ">Best Selling Books Ever</h1>
+      <h1 className="text-emerald-950 text-2xl ">Best Selling Books Ever</h1>
       <div id="feat">
-        <div className="features">
+        <div className="features bg-emerald-100">
           <img src={featureImg} />
           <h2>Stalight in His Eyes</h2>
           <p>Richard Worl</p>
           <br></br>
-          <p1 className="flex">
+          <p1 className="flex text-emerald-950">
             <FaStar />
             <FaStar />
             <FaStar />
@@ -25,12 +25,12 @@ const Featured = () => {
             <FaStar />
           </p1>
         </div>
-        <div className="features">
+        <div className="features bg-emerald-100">
           <img src={featureImg2} />
           <h2>Whale Harbor </h2>
           <p>Fiona </p>
           <br></br>
-           <p1 className="flex">
+           <p1 className="flex text-emerald-950">
             <FaStar />
             <FaStar />
             <FaStar />
@@ -38,12 +38,12 @@ const Featured = () => {
             <FaRegStarHalfStroke />
           </p1>
         </div>
-        <div className="features">
+        <div className="features bg-emerald-100">
           <img src={featureImg3} />
           <h2>The Chosen Girl</h2>
           <p>Elle Gray</p>
           <br></br>
-           <p1 className="flex">
+           <p1 className="flex text-emerald-950">
             <FaStar />
             <FaStar />
             <FaStar />
@@ -51,12 +51,12 @@ const Featured = () => {
             <FaStar />
           </p1>
         </div>
-        <div className="features">
+        <div className="features bg-emerald-100">
           <img src={featureImg4} />
           <h2>Chateau Escape</h2>
           <p>Kate Galley</p>
           <br></br>
-          <p1 className="flex">
+          <p1 className="flex text-emerald-950">
             <FaStar />
             <FaStar />
             <FaStar />
@@ -64,12 +64,12 @@ const Featured = () => {
             <FaStar />
           </p1>
         </div>
-        <div className="features">
+        <div className="features bg-emerald-100">
           <img src={featureImg5} />
           <h2>The Girl In Town</h2>
           <p>Elle Gray</p>
           <br></br>
-          <p1 className="flex">
+          <p1 className="flex text-emerald-950">
             <FaStar />
             <FaStar />
             <FaStar />
@@ -77,12 +77,12 @@ const Featured = () => {
             <FaStar />
           </p1>
         </div>
-        <div className="features">
+        <div className="features bg-emerald-100">
           <img src={featureImg6} />
           <h2>Turn Back Time</h2>
           <p>Sian</p>
           <br></br>
-          <p1 className="flex">
+          <p1 className="flex text-emerald-950">
             <FaStar />
             <FaStar />
             <FaStar />

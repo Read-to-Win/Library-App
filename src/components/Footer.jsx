@@ -7,11 +7,11 @@ import { Link } from "react-router";
 
 const Footer = () => {
   return (
-    <footer className="footer flex flex-row justify-centeritems-center">
+    <footer className="footer flex flex-row justify-centeritems-center bg-emerald-950 ">
       <div className="footer-container">
         <div className="footer-left">
           <h4 className="text-3xl text-amber-400 flex gap-3">
-            <Link to="./contact">Footer</Link>
+            <Link to="./contact"></Link>
             <FaBookOpenReader />
             ReadTo_Win
             <FaAward />
