@@ -49,7 +49,7 @@ const NavBar = () => {
         onClose={() => {
           setIsOpen(false);
         }}
-        title="Add Product"
+        title="Add Book"
       >
         <Form />
       </Modal>
