@@ -19,12 +19,12 @@ const NavBar = () => {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to ="/about">About</Link></li>
+          About</li>
         <li>
           <Link to="/books">Books</Link>
         </li>
         <li>
-          <Link to ="/contact">Contact</Link></li>
+          Contact</li>
       </ul>
       <span className="flex items-center gap-2">
   

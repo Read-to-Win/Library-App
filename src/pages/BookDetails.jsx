@@ -30,12 +30,12 @@ const BookDetails = () => {
   }, []);
   return (
     <div className="min-h-screen bg-emerald-100 flex items-center justify-center p-4">
-      {/* <button
+      <button
         onClick={() => navigate(-1)}
-        className="text-blue-500 hover:underline text-sm mr-5"
+        className="text-emerald-950 hover:underline text-sm font-bold mr-5"
       >
         &larr; Back
-      </button> */}
+      </button>
       {loading ? (
         <p>Loading....</p>
       ) : (
